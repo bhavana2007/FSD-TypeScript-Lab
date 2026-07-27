@@ -4,7 +4,7 @@ console.log(value);
 value = "Hello";
 console.log(value);
 
-let data: unknown = "TypeScript";
+let dta: unknown = "TypeScript";
 
 function printMessage(): void {
     console.log("Learning TypeScript");
