@@ -9,6 +9,9 @@ CSE (AI & ML)
 ## Semester
 III B.Tech I Semester
 
+## Registration Number
+24B01A4255
+
 ## Contents
 
 - Week 1 - TypeScript Basics
