@@ -1,9 +1,9 @@
 # Week 6 - Request Response Life Cycle
 
 ## Objective
-Understand the HTTP request-response lifecycle and implement RESTful GET, POST, PUT and DELETE methods using Express.js. The lab also demonstrates JSON handling, custom middleware and request logging.
+To understand the HTTP request-response lifecycle and implement RESTful HTTP methods using ExpressJS.
 
-## Lab Experiments
+## Experiments
 1. Implement GET, POST, PUT, DELETE
 2. Send and receive JSON
 3. Delete a resource
@@ -11,18 +11,16 @@ Understand the HTTP request-response lifecycle and implement RESTful GET, POST, 
 5. Log requests
 
 ## Run
+Install Express:
+
 ```bash
-npm install
-npm run dev
+npm install express
 ```
 
-Server: `http://localhost:3001`
+Run an experiment:
 
-## API Endpoints
-- `GET /students`
-- `GET /students/:id`
-- `POST /students` with JSON `{ "name": "Meera", "course": "AIML" }`
-- `PUT /students/:id` with JSON `{ "course": "CSE" }`
-- `DELETE /students/:id`
+```bash
+node 1_http_get_post_put_delete.js
+```
 
-The data is stored in memory for demonstration purposes.
+Week 6 experiments use port **3001** so that they can be run separately from Week 5.
