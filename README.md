@@ -20,11 +20,13 @@ III B.Tech I Semester
 - Week 4 - Modules, Namespaces and Generics
 - Week 5 - Creating Web Server Using Express
 - Week 6 - Request Response Life Cycle and REST API
+- Week 7 - Server-Side Rendering
 
 ## Technology Used
 - Node.js
 - TypeScript
 - Express.js
+- EJS
 - VS Code
 
 ## Week 5
@@ -32,3 +34,6 @@ Covers Express server setup, basic routes, route parameters, query parameters an
 
 ## Week 6
 Covers GET, POST, PUT and DELETE, JSON request/response handling, custom middleware and request logging.
+
+## Week 7
+Covers EJS template engine configuration, dynamic values, form input handling and basic validation.
