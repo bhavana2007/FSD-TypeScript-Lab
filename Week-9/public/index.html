@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 9 - Student CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">FULL STACK DEVELOPMENT · WEEK 9</p>
+      <h1>MongoDB Student Manager</h1>
+      <p class="subtitle">MongoDB + Mongoose + Express REST API + Single Page Application</p>
+    </header>
+
+    <section class="card">
+      <h2 id="form-title">Add Student</h2>
+
+      <form id="student-form">
+        <input type="hidden" id="student-id">
+
+        <div class="grid">
+          <label>Name
+            <input id="name" required minlength="2" placeholder="Student name">
+          </label>
+
+          <label>Roll Number
+            <input id="rollNumber" required placeholder="24B01A0000">
+          </label>
+
+          <label>Branch
+            <input id="branch" required placeholder="AIML">
+          </label>
+
+          <label>Year
+            <input id="year" type="number" min="1" max="4" required placeholder="3">
+          </label>
+
+          <label>Email
+            <input id="email" type="email" required placeholder="student@example.com">
+          </label>
+        </div>
+
+        <div class="actions">
+          <button type="submit" id="submit-btn">Add Student</button>
+          <button type="button" class="secondary" id="cancel-btn" hidden>Cancel Edit</button>
+        </div>
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <div>
+          <h2>Students</h2>
+          <p id="count">Loading...</p>
+        </div>
+        <button class="secondary" id="refresh-btn">Refresh</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Roll Number</th>
+              <th>Branch</th>
+              <th>Year</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="student-list"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
