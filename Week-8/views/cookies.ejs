@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Create and Read Cookies</h1>
+
+    <% if (message) { %>
+        <p><strong><%= message %></strong></p>
+    <% } %>
+
+    <form method="POST" action="/create-cookie">
+        <label>Enter your name:</label>
+        <input type="text" name="name" required>
+
+        <button type="submit">Create Cookie</button>
+    </form>
+
+    <% if (savedName) { %>
+        <h2>Cookie Value</h2>
+        <p>Student name stored in cookie: <strong><%= savedName %></strong></p>
+        <a href="/clear-cookie">Clear Cookie</a>
+    <% } else { %>
+        <p>No studentName cookie found.</p>
+    <% } %>
+</body>
+</html>
