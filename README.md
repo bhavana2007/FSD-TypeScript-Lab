@@ -21,12 +21,15 @@ III B.Tech I Semester
 - Week 5 - Creating Web Server Using Express
 - Week 6 - Request Response Life Cycle and REST API
 - Week 7 - Server-Side Rendering
+- Week 8 - Sessions, Authentication and Cookies
 
 ## Technology Used
 - Node.js
 - TypeScript
 - Express.js
 - EJS
+- Express Session
+- Cookie Parser
 - VS Code
 
 ## Week 5
@@ -37,3 +40,8 @@ Covers GET, POST, PUT and DELETE, JSON request/response handling, custom middlew
 
 ## Week 7
 Covers EJS template engine configuration, dynamic values, form input handling and basic validation.
+
+## Week 8
+Covers login/logout authentication, maintaining state with sessions, and creating, reading and clearing cookies.
+
+See the [Week-8 README](Week-8/README.md) for experiment details and run instructions.
